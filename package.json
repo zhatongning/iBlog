@@ -1,0 +1,22 @@
+{
+  "name": "forfun",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.13.0"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhatongning/iBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhatongning/iBlog/issues"
+  },
+  "homepage": "https://github.com/zhatongning/iBlog#readme"
+}
