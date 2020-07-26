@@ -4,10 +4,18 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.13.0"
+    "@babel/polyfill": "^7.10.4",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "koa": "^2.13.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node ./client-server.js",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -18,5 +26,27 @@
   "bugs": {
     "url": "https://github.com/zhatongning/iBlog/issues"
   },
-  "homepage": "https://github.com/zhatongning/iBlog#readme"
+  "homepage": "https://github.com/zhatongning/iBlog#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-typescript": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.9",
+    "html-webpack-plugin": "^4.3.0",
+    "source-map-loader": "^1.0.1",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0"
+  }
 }

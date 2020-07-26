@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["@babel/preset-react"],
+    ["@babel/preset-typescript"],
+    [
+      "@babel/env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": "3.6.5"
+      }
+    ]
+  ]
+}
