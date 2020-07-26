@@ -1,7 +1,12 @@
-import React from "react"
+import React, { FC } from "react"
+import Home from "@/pages/Home"
 
-const App = () => {
-  return <div className="app">just for fun</div>
+const App: FC<{}> = () => {
+  return (
+    <div className="app">
+      just for fun <Home />
+    </div>
+  )
 }
 
 export default App
