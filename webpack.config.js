@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "clientDist"),
     filename: "[name].[hash].js",
+    publicPath: "/",
   },
   devtool: "inline-source-map",
   devServer: {
@@ -30,6 +31,21 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
       },
     ],
   },

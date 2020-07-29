@@ -1,10 +1,10 @@
 import React, { FC } from "react"
-import Home from "@/pages/Home"
+import Home from "@/pages/Home/index"
 
 const App: FC<{}> = () => {
   return (
     <div className="app">
-      just for fun <Home />
+      <Home />
     </div>
   )
 }

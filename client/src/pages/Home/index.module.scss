@@ -1,0 +1,20 @@
+.home {
+  width: 100vw;
+
+  .banner {
+    width: 100vw;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    background-image: url("../../assets/images/index-bg.jpg");
+    height: 400px;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 32px;
+      color: #ffffff;
+    }
+  }
+}
