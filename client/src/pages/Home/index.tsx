@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./index.module.scss"
-import bannerImg from "@/assets/images/tai.jpg"
 
 const Home = () => (
   <section className={styles.home}>

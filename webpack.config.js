@@ -1,8 +1,6 @@
 const path = require("path")
-const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
 
 module.exports = {
   mode: "development",
@@ -15,6 +13,7 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./clientDist",
+    historyApiFallback: true,
     hot: true,
   },
   resolve: {
